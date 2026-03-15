@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>metrica.one | Fortaleza del Margen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                orange: '#F97316',     
+                black: '#020617',      
+                charcoal: '#0F172A',   
+                white: '#F8FAFC',      
+                cyan: '#22D3EE',       
+                gold: '#FACC15',
+                border: '#1E293B'      
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+              gothic: ['UnifrakturMaguntia', 'serif'],
+            },
+            boxShadow: {
+              'glow-orange': '0 0 20px -5px rgba(249, 115, 22, 0.5)',
+              'glow-cyan': '0 0 20px -5px rgba(34, 211, 238, 0.5)',
+              'royal': '0 0 40px -10px rgba(250, 204, 21, 0.2)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020617;
+        color: #F8FAFC;
+        background-image: 
+          radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.5) 0%, rgba(2, 6, 23, 1) 100%),
+          url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+      }
+      
+      .cyber-border {
+        position: relative;
+        border: 1px solid #1E293B;
+      }
+      .cyber-border::before {
+        content: '';
+        position: absolute;
+        top: -1px; left: -1px; width: 15px; height: 15px;
+        border-top: 2px solid #F97316; border-left: 2px solid #F97316;
+      }
+      .cyber-border::after {
+        content: '';
+        position: absolute;
+        bottom: -1px; right: -1px; width: 15px; height: 15px;
+        border-bottom: 2px solid #22D3EE; border-right: 2px solid #22D3EE;
+      }
+
+      .text-glow-gold { text-shadow: 0 0 10px rgba(250, 204, 21, 0.5); }
+      
+      @keyframes scan {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(1000%); }
+      }
+      
+      .scroll-mask {
+        mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+      }
+
+      /* Estilo de cursor custom */
+      body { cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2V6M12 18V22M6 12H2M22 12H18M19.07 4.93L16.24 7.76M7.76 16.24L4.93 19.07M19.07 19.07L16.24 16.24M7.76 7.76L4.93 4.93' stroke='%23F97316' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"), auto; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

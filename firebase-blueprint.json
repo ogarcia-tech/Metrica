@@ -1,0 +1,44 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "Information about the registered users (vassals).",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Firebase Auth UID" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string", "format": "uri" },
+        "role": { "type": "string", "enum": ["admin", "user"], "description": "User role in the guild" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "leads": {
+      "title": "Contact Lead",
+      "description": "Leads captured from the contact form.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "project": { "type": "string", "description": "Hotel or experience name" },
+        "revenue": { "type": "string", "description": "Annual revenue range" },
+        "otaDependency": { "type": "string", "description": "Percentage of dependency on OTAs" },
+        "message": { "type": "string" },
+        "status": { "type": "string", "enum": ["new", "contacted", "archived"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "email", "project", "revenue", "otaDependency", "message", "createdAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "users",
+      "description": "User profiles collection"
+    },
+    "leads/{leadId}": {
+      "schema": "leads",
+      "description": "Contact form submissions"
+    }
+  }
+}
