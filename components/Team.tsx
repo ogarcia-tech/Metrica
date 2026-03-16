@@ -12,16 +12,18 @@ const teamMembers: TeamMember[] = [
     title: 'El Arquitecto de Reservas',
     mount: 'Halcón de Datos (Data Falcon)',
     power: 'Visión de Margen Neto',
-    imageStr: 'https://picsum.photos/seed/metrica-ceo-falcon/600/800'
+    imageStr: 'https://picsum.photos/seed/metrica-ceo-falcon/600/800',
+    gender: 'male'
   },
   {
     id: 2,
-    name: 'Vasallo Analista',
+    name: 'Vasalla Analista',
     role: 'Data & Analytics',
-    title: 'El Centinela de Datos',
+    title: 'La Centinela de Datos',
     mount: 'Esfinge de Cristal (Crystal Sphinx)',
     power: 'Predicción de Demanda',
-    imageStr: 'https://picsum.photos/seed/metrica-analyst-sphinx/600/800'
+    imageStr: 'https://picsum.photos/seed/metrica-analyst-sphinx/600/800',
+    gender: 'female'
   },
   {
     id: 3,
@@ -29,8 +31,9 @@ const teamMembers: TeamMember[] = [
     role: 'UX/UI & Conversion',
     title: 'El Alquimista de Conversión',
     mount: 'Camaleón de Píxeles (Pixel Chameleon)',
-    power: 'Hipnosis de Reserva',
-    imageStr: 'https://picsum.photos/seed/metrica-creative-chameleon/600/800'
+    power: 'Hipnosis de Reserva Directa',
+    imageStr: 'https://picsum.photos/seed/metrica-creative-chameleon/600/800',
+    gender: 'male'
   },
   {
     id: 4,
@@ -38,8 +41,9 @@ const teamMembers: TeamMember[] = [
     role: 'Ads & Market Acquisition',
     title: 'El Heraldo de Mercados',
     mount: 'Pantera de Sombras (Shadow Panther)',
-    power: 'Captación Internacional',
-    imageStr: 'https://picsum.photos/seed/metrica-traffic-panther/600/800'
+    power: 'Captación de Turista Premium',
+    imageStr: 'https://picsum.photos/seed/metrica-traffic-panther/600/800',
+    gender: 'male'
   },
   {
     id: 5,
@@ -48,16 +52,18 @@ const teamMembers: TeamMember[] = [
     title: 'El Guardián del Margen',
     mount: 'Tortuga de Hierro (Iron Turtle)',
     power: 'Escudo Anti-Comisiones',
-    imageStr: 'https://picsum.photos/seed/metrica-revenue-turtle/600/800'
+    imageStr: 'https://picsum.photos/seed/metrica-revenue-turtle/600/800',
+    gender: 'male'
   },
   {
     id: 6,
-    name: 'Vasallo de IA',
+    name: 'Vasalla de IA',
     role: 'Automation & AI Dev',
-    title: 'El Oráculo de la IA',
+    title: 'La Oráculo de la IA',
     mount: 'Golem de Silicio (Silicon Golem)',
-    power: 'Automatización 24/7',
-    imageStr: 'https://picsum.photos/seed/metrica-ai-oracle-golem/600/800'
+    power: 'Automatización de Experiencias',
+    imageStr: 'https://picsum.photos/seed/metrica-ai-oracle-golem/600/800',
+    gender: 'female'
   }
 ];
 
@@ -122,7 +128,7 @@ const Team: React.FC = () => {
   const { images, loading: generating } = useTeamImages(teamMembers);
 
   const handleReset = () => {
-    localStorage.removeItem('metrica_team_images');
+    localStorage.removeItem('metrica_team_images_v3');
     window.location.reload();
   };
 
@@ -131,10 +137,10 @@ const Team: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 relative">
           <h2 className="text-3xl font-black text-brand-white uppercase tracking-widest mb-2 hover-glow-brand cursor-default transition-all">
-            El Gremio Turístico
+            El Gremio del Hospitality
           </h2>
           <p className="text-brand-orange font-mono">
-            // LOS 6 VASALLOS - INGENIERÍA DE RESERVAS DIRECTAS
+            // LOS 6 VASALLOS - INGENIERÍA DEL MARGEN PARA HOTELES Y EXPERIENCIAS
           </p>
           
           <button 

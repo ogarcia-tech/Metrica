@@ -4,33 +4,33 @@ import { Hotel, Ship, Home, ChevronRight, Loader2, Layers } from 'lucide-react';
 
 const verticals = [
   {
-    id: 'hotel',
-    title: 'Alojamientos Premium',
-    subtitle: 'Hoteles & Agroturismos',
+    id: 'hospitality',
+    title: 'Hospitality Premium',
+    subtitle: 'Hoteles & Spas de Lujo',
     icon: <Hotel />,
-    desc: 'Para hoteles boutique y agroturismos que quieren dejar de pagar comisiones abusivas. Implementamos arquitectura de reserva directa, agentes de IA multilingües y fidelización automatizada.',
-    tags: ['PMS Integration', 'Direct Booking', 'Margen Neto']
+    desc: 'Para hoteles boutique, agroturismos y spas que quieren dejar de pagar comisiones abusivas. Implementamos arquitectura de reserva directa, agentes de IA multilingües y sistemas de fidelización que maximizan el LTV.',
+    tags: ['PMS Integration', 'Direct Booking', 'LTV Optimization']
   },
   {
     id: 'exp',
-    title: 'Experiencias de Lujo',
-    subtitle: 'Yates & Actividades',
+    title: 'Experiencias & Leisure',
+    subtitle: 'Beach Clubs & Chárters',
     icon: <Ship />,
-    desc: 'Automatización real para empresas de charter y experiencias exclusivas. Desde la captación del lead internacional hasta la reserva y el upselling, todo orquestado por sistemas.',
-    tags: ['Charter Funnels', 'IA Sales', 'High Ticket']
+    desc: 'Automatización real para clubes de playa, empresas de chárter náutico y tours exclusivos. Hackeamos tu dependencia de GetYourGuide y Viator mediante sistemas de captación propia y upselling automatizado.',
+    tags: ['Bokun/Rezdy Sync', 'IA Sales Agent', 'OTA Independence']
   },
   {
     id: 'real',
     title: 'Real Estate Turístico',
     subtitle: 'Villas & Inversión',
     icon: <Home />,
-    desc: 'Para inmobiliarias de lujo en Baleares. Creamos un flujo constante de leads cualificados (HNI) para que tu equipo solo hable con quien está listo para invertir.',
+    desc: 'Para inmobiliarias de lujo y gestores de villas en Baleares. Creamos un flujo constante de leads cualificados (HNI) para que tu equipo solo hable con quien está listo para invertir o reservar.',
     tags: ['Lead Gen IA', 'HNI Targeting', 'CRM Automation']
   }
 ];
 
 const Verticals: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('hotel');
+  const [activeTab, setActiveTab] = useState('hospitality');
 
   return (
     <section id="versiones" className="w-full py-24 px-6 bg-brand-charcoal border-b border-brand-border relative overflow-hidden scroll-mt-32">

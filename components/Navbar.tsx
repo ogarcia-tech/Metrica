@@ -82,21 +82,18 @@ const Navbar: React.FC = () => {
         <Link 
           to="/" 
           onClick={(e: any) => handleNavClick(e, '/#inicio')}
-          className="flex items-center gap-3 group"
+          className="flex items-center gap-2 group"
         >
-          {/* Hexagon M1 (matches image) */}
-          <div className="relative w-8 h-8 flex items-center justify-center">
-            <Hexagon className="text-brand-orange absolute inset-0 w-full h-full fill-brand-orange/10" strokeWidth={1.5} />
-            <span className="font-mono font-bold text-brand-white text-xs relative z-10">M1</span>
-          </div>
-          {/* Brand Name & Tagline */}
-          <div className="flex flex-col leading-none">
-            <span className="text-lg font-bold text-brand-white">
-              metrica<span className="text-brand-orange">.one</span>
-            </span>
-            <span className="text-[10px] text-brand-white/70 group-hover:text-brand-cyan transition-colors">
-              Ingenier<span className="text-brand-orange font-bold">IA</span> del margen
-            </span>
+          <div className="flex items-center gap-2">
+            <span className="text-4xl font-serif font-bold text-brand-orange leading-none">1</span>
+            <div className="flex flex-col leading-none pt-1">
+              <span className="text-xl font-bold text-brand-white tracking-tighter">
+                metrica<span className="text-brand-orange">.one</span>
+              </span>
+              <span className="text-[9px] text-brand-white/50 group-hover:text-brand-cyan transition-colors uppercase tracking-widest font-mono">
+                Ingenier<span className="text-brand-orange font-bold">IA</span> del crecimiento
+              </span>
+            </div>
           </div>
         </Link>
 

@@ -59,16 +59,16 @@ const Manifesto: React.FC = () => {
 
               <div className="space-y-6 text-brand-white/80 leading-relaxed text-lg">
                 <p>
-                  Nos presentamos bajo el estandarte de <strong className="text-brand-cyan font-mono bg-brand-cyan/10 px-1 rounded">Métrica.One</strong>. En un mundo de algoritmos fríos, nosotros somos los artesanos de la <span className="text-brand-orange font-bold italic">Ingeniería del Margen</span>.
+                  Tienes un producto excelente, ya sea un alojamiento boutique, un spa de lujo o una experiencia náutica. Pero el problema es que trabajas para pagar comisiones. El <strong className="text-brand-orange">60-80% de tus reservas</strong> llegan por plataformas de terceros que se quedan con el 15-20% de tu esfuerzo.
                 </p>
                 
                 <div className="flex items-start gap-4 p-4 bg-brand-charcoal border-l-4 border-brand-orange/50 italic text-brand-white/90">
                   <AlertTriangle className="text-brand-orange shrink-0 mt-1" size={20} />
-                  <p>"La IA sin control es solo ruido. Nosotros somos el filtro, el escudo y la espada que protege tu canal directo."</p>
+                  <p>"En Métrica One construimos Sistemas de Captación Directa e integramos Asistentes de IA (24/7) que llenan tus cupos y cierran reservas directas en tu propio sistema."</p>
                 </div>
 
                 <p>
-                  Somos <strong className="text-brand-orange font-mono bg-brand-orange/10 px-1 rounded">Los 6 Vasallos</strong>. Un gremio de especialistas en una misión sagrada: devolver el poder a los propietarios. Usamos estética <span className="text-brand-cyan font-bold">Cyber-Medieval</span> porque combinamos la sabiduría ancestral del sector con la tecnología más disruptiva del mañana.
+                  Recupera el control de tu ocupación y tu margen. Integramos nuestra tecnología con tus plataformas actuales (<strong className="text-brand-cyan">Bokun, Cloudbeds, Mirai</strong>) para que hables en 4 idiomas con el turista y cierres la venta sin intermediarios.
                 </p>
 
                 {/* The Code Block / Pact */}

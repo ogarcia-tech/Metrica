@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { getGemini } from '../lib/gemini';
 import { TeamMember } from '../../types';
 
-const STORAGE_KEY = 'metrica_team_images';
+const STORAGE_KEY = 'metrica_team_images_v3';
 
 export const useTeamImages = (members: TeamMember[]) => {
   const [images, setImages] = useState<Record<number, string>>({});
@@ -22,11 +22,12 @@ export const useTeamImages = (members: TeamMember[]) => {
 
       for (const member of members) {
         try {
-          const prompt = `Cyberpunk Medieval Corporate character portrait of ${member.name}, known as '${member.title}'. 
-          They are riding a '${member.mount}'. 
-          Their special power is '${member.power}'. 
-          Aesthetic: High-tech armor with heraldic symbols, orange and cyan neon lights, professional and authoritative pose, digital parchment background. 
-          Style: High quality, detailed, cinematic lighting, 3:4 aspect ratio.`;
+          const prompt = `Cinematic character portrait of a ${member.gender || 'male'} character named ${member.name}, known as '${member.title}'. 
+          The character is riding a '${member.mount}' that corresponds to their function.
+          Aesthetic: Cyberpunk Medieval Corporate. High-tech armor with heraldic symbols, subtle orange and cyan neon accents.
+          Background: Neutral, minimalist, studio-like background to emphasize the character and their mount. 
+          Pose: Professional, authoritative, and epic.
+          Style: High quality, hyper-detailed, cinematic lighting, 3:4 aspect ratio.`;
 
           const response = await ai.models.generateContent({
             model: 'gemini-2.5-flash-image',

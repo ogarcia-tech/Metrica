@@ -49,7 +49,7 @@ const ProblemSolution: React.FC = () => {
             </span>
           </h2>
           <p className="text-brand-white/60 max-w-2xl mx-auto font-mono text-sm md:text-base bg-brand-charcoal/50 p-4 rounded border-l-2 border-brand-orange">
-            &lt;system_alert&gt; Pagar un 20% es doloroso, pero que el huésped no sea tuyo es fatal. Si Booking cambia su algoritmo mañana, tu negocio desaparece. Nosotros inyectamos demanda orgánica desde nuestra propia red de portales (ej. Portaldehosteleria) para que nunca dependas de un solo hilo. &lt;/system_alert&gt;
+            &lt;system_alert&gt; El enemigo no es solo Booking. Son GetYourGuide, Viator, Civitatis o incluso los conserjes que exigen comisiones abusivas. Si el algoritmo cambia mañana, tu negocio desaparece. Nosotros inyectamos demanda orgánica desde nuestra propia red de portales para que nunca dependas de un solo hilo. &lt;/system_alert&gt;
           </p>
         </div>
 

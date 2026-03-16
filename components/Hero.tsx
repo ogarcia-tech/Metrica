@@ -33,12 +33,12 @@ const Hero: React.FC = () => {
 
            <h1 className="text-5xl md:text-7xl font-black text-brand-white leading-[0.9] tracking-tighter animate-in slide-in-from-bottom-6 fade-in duration-1000 delay-100">
              LA NUEVA <br />
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-red-500 to-brand-orange bg-300% animate-gradient">NOBLEZA TURÍSTICA</span>
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-red-500 to-brand-orange bg-300% animate-gradient">INGENIERÍA DEL MARGEN</span>
            </h1>
 
            <p className="text-lg md:text-xl text-brand-white/70 max-w-xl leading-relaxed animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-200">
-             Deja de alquilar clientes a las OTAs. Construye tu propia <strong className="text-brand-white">máquina autónoma de reservas directas</strong> para tu hotel o empresa de experiencias. <br/>
-             <span className="text-brand-cyan">Más margen, menos comisiones.</span>
+             Hackeamos tu dependencia de intermediarios para que recuperes hasta un <strong className="text-brand-white">20% de tu beneficio directo</strong>. <br/>
+             <span className="text-brand-cyan">Hospitality & Experiencias Premium: Hoteles, Spas, Beach Clubs y Chárters.</span>
            </p>
 
            <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto animate-in slide-in-from-bottom-10 fade-in duration-1000 delay-300">

@@ -6,6 +6,7 @@ export interface TeamMember {
   mount: string;
   power: string;
   imageStr: string;
+  gender?: 'male' | 'female';
 }
 
 export interface Service {

@@ -33,7 +33,17 @@ const Footer: React.FC = () => {
         
         {/* Col 1: Marca */}
         <div className="lg:col-span-1 space-y-4">
-          <Link to="/" className="text-2xl font-bold text-brand-white tracking-tighter hover-glow-brand cursor-pointer block">METRICA<span className="text-brand-orange">.ONE</span></Link>
+          <Link to="/" className="flex items-center gap-2 group cursor-pointer mb-4">
+            <span className="text-3xl font-serif font-bold text-brand-orange leading-none">1</span>
+            <div className="flex flex-col leading-none pt-1">
+              <span className="text-lg font-bold text-brand-white tracking-tighter">
+                metrica<span className="text-brand-orange">.one</span>
+              </span>
+              <span className="text-[8px] text-brand-white/40 uppercase tracking-widest font-mono">
+                Ingenier<span className="text-brand-orange font-bold">IA</span> del crecimiento
+              </span>
+            </div>
+          </Link>
           <p className="text-brand-white/50 text-xs leading-relaxed">
             Infraestructura de Crecimiento Turístico. Métrica procesa, los Vasallos ejecutan el margen.
           </p>
